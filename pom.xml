@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>tga.hib-json-aws-kms</groupId>
+    <artifactId>hib-json-aws-kms</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kotlin.version>1.4.10</kotlin.version>
+        <kotlin.code.style>official</kotlin.code.style>
+        <junit.version>4.12</junit.version>
+        <mockk.version>1.9.3</mockk.version>
+    </properties>
+
+    <dependencyManagement><dependencies>
+        <!-- AWS integration -->
+        <dependency> <artifactId>aws-java-sdk-bom</artifactId> <version>1.11.876</version> <groupId>com.amazonaws</groupId> <type>pom</type> <scope>import</scope> </dependency>
+
+    </dependencies></dependencyManagement>
+
+    <dependencies>
+        <dependency> <artifactId>kotlin-stdlib-jdk8</artifactId>   <groupId>org.jetbrains.kotlin</groupId>  <version>${kotlin.version}</version> </dependency>
+        <dependency> <artifactId>logback-classic</artifactId> <groupId>ch.qos.logback</groupId>        <version>1.2.3</version>             </dependency>
+
+        <dependency> <artifactId>postgresql</artifactId>           <groupId>org.postgresql</groupId> <version>42.2.16</version> </dependency>
+        <dependency> <artifactId>mysql-connector-java</artifactId> <groupId>mysql</groupId>          <version>8.0.20</version> </dependency>
+
+        <dependency> <artifactId>hibernate-core</artifactId>     <groupId>org.hibernate</groupId>    <version>5.4.22.Final</version> </dependency>
+        <dependency> <artifactId>hibernate-types-52</artifactId> <groupId>com.vladmihalcea</groupId> <version>2.9.13</version> </dependency>
+
+        <dependency> <artifactId>aws-java-sdk-kms</artifactId>        <groupId>com.amazonaws</groupId> </dependency>
+        <dependency> <artifactId>aws-encryption-sdk-java</artifactId> <groupId>com.amazonaws</groupId> <version>2.0.0</version> </dependency>
+
+        <dependency> <artifactId>kotlin-test-junit</artifactId> <groupId>org.jetbrains.kotlin</groupId> <version>${kotlin.version}</version> <scope>test</scope> </dependency>
+        <dependency> <artifactId>junit</artifactId>             <groupId>junit</groupId>                <version>${junit.version}</version>  <scope>test</scope> </dependency>
+        <dependency> <artifactId>mockk</artifactId>             <groupId>io.mockk</groupId>             <version>${mockk.version}</version>  <scope>test</scope> </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src/main/kotlin</sourceDirectory>
+        <testSourceDirectory>src/test/kotlin</testSourceDirectory>
+
+        <plugins>
+            <!-- kotlin-maven-plugin -->
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <jvmTarget>1.8</jvmTarget>
+                    <compilerPlugins>
+                        <plugin>jpa</plugin>
+                    </compilerPlugins>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-noarg</artifactId>
+                        <version>${kotlin.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>testCompile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

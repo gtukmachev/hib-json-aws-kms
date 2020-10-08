@@ -1,0 +1,14 @@
+<configuration debug="false">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <charset>UTF-8</charset>
+            <outputPatternAsHeader>false</outputPatternAsHeader>
+            <pattern>%highlight(%-5level) %gray(%d{HH:mm:ss.SSS}) %yellow(%logger{36}) %cyan(:) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info"><appender-ref ref="STDOUT"/></root>
+    <logger name="tga.hib_json_aws_kms" level="debug"/>
+
+</configuration>
