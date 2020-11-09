@@ -10,6 +10,7 @@ import tga.hib_json_aws_kms.encryption.Encryptor
 import java.nio.charset.StandardCharsets
 import java.util.*
 import java.util.concurrent.TimeUnit
+import tga.hib_json_aws_kms.encryption.kms.internal.DefaultCryptoMaterialsManagerWrapper
 
 class KmsEncryptor : Encryptor {
 
@@ -18,7 +19,7 @@ class KmsEncryptor : Encryptor {
 
         private const val MAX_ENTRY_AGE_DAYS: Long = 90
         private const val MAX_CACHE_ENTRIES = 10000
-        private const val KEY_ARN = "arn:aws:kms:us-east-1:575157453892:key/99934d01-73f6-4ced-9976-33c22216bc1e"
+        private const val KEY_ARN = "arn:aws:kms:us-east-1:495291029999:key/761ae666-c432-4a4d-9580-68c63fefc940"
         private       val ENCRYPTION_CONTEXT = Collections.singletonMap("owner", "savvy")
 
         private val base64encoder = Base64.getEncoder()
@@ -34,7 +35,7 @@ class KmsEncryptor : Encryptor {
         private val cache = LocalCryptoMaterialsCache(MAX_CACHE_ENTRIES)
 
         private val CACHING_MATERIALS_MANAGER = CachingCryptoMaterialsManager.newBuilder()
-                .withMasterKeyProvider(keyProvider)
+				.withBackingMaterialsManager(DefaultCryptoMaterialsManagerWrapper(keyProvider))
                 .withCache(cache)
                 .withMaxAge(MAX_ENTRY_AGE_DAYS, TimeUnit.DAYS)
                 .build()
