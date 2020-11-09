@@ -1,0 +1,109 @@
+{
+	"dataKey": {
+		"masterKey": {
+			"grantTokens": [
+			],
+			"providerId": "aws-kms",
+			"keyId": "arn:aws:kms:us-east-1:495291029999:key/761ae666-c432-4a4d-9580-68c63fefc940",
+			"defaultProviderId": "aws-kms"
+		},
+		"providerId": "aws-kms",
+		"providerInformation": "YXJuOmF3czprbXM6dXMtZWFzdC0xOjQ5NTI5MTAyOTk5OTprZXkvNzYxYWU2NjYtYzQzMi00YTRkLTk1ODAtNjhjNjNmZWZjOTQw",
+		"encryptedDataKey": "AQIBAHjnilkCG+UMOkPJZBkY9q2rg6vPCP6RjFIOE+ikokC2XwGb+4SSIFuMjbTPqMsml75WAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMUXtLn0XinBlxmYvsAgEQgDsZj/dga14UGH0Tz3Ljay13+qOpZTndFbneBnPDi6qadJ7by+Gana83lNypeP7Hqe5zsVLuj9ctJtn2aQ==",
+		"key": {
+			"algorithm": "HkdfSHA512",
+			"format": "RAW",
+			"encoded": "knNYAk/y+LGignfPM/42uBl7W1IWiYH7ZivuVFDNfsU=",
+			"destroyed": false
+		}
+	},
+	"trailingSignatureKey": {
+		"w": {
+			"affineX": 16121798864787702766757139615721547665073103874772195622924412178972290868419193567530571008471948063432116137971888,
+			"affineY": 35746812787951996459236077741457092401487032927809507678339531369279438826535239481329707926156459269446005841746285
+		},
+		"params": {
+			"curve": {
+				"field": {
+					"p": 39402006196394479212279040100143613805079739270465446667948293404245721771496870329047266088258938001861606973112319,
+					"fieldSize": 384
+				},
+				"a": 39402006196394479212279040100143613805079739270465446667948293404245721771496870329047266088258938001861606973112316,
+				"b": 27580193559959705877849011840389048093056905856361568521428707301988689241309860865136260764883745107765439761230575,
+				"seed": null
+			},
+			"cofactor": 1,
+			"order": 39402006196394479212279040100143613805079739270465446667946905279627659399113263569398956308152294913554433653942643,
+			"generator": {
+				"affineX": 26247035095799689268623156744566981891852923491109213387815615900925518854738050089022388053975719786650872476732087,
+				"affineY": 8325710961489029985546751289520108179287853048861315594709205902480503199884419224438643760392947333078086511627871
+			}
+		},
+		"algorithm": "EC",
+		"encodedPublicValue": "BGi+1TYkkb3Tzj5ojdypHPHAS0XNvjfpkn4Ktz3SvN9jfcDMBfhsH4H57BN15HFQsOhAcVNwu/9gU7yc+zfnAssZOBWxncxRVaaoCVASSEz/QFs9L+ZUPX7Fn6VvGCRZbQ==",
+		"format": "X.509",
+		"encoded": "MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEaL7VNiSRvdPOPmiN3Kkc8cBLRc2+N+mSfgq3PdK832N9wMwF+GwfgfnsE3XkcVCw6EBxU3C7/2BTvJz7N+cCyxk4FbGdzFFVpqgJUBJITP9AWz0v5lQ9fsWfpW8YJFlt",
+		"algorithmId": {
+			"encodedParams": "BgUrgQQAIg==",
+			"oid": {
+			},
+			"name": "EC",
+			"parameters": {
+				"provider": {
+					"AlgorithmParameters.EC": "sun.security.ec.ECParameters",
+					"KeyAgreement.ECDH SupportedKeyClasses": "java.security.interfaces.ECPublicKey|java.security.interfaces.ECPrivateKey",
+					"Signature.SHA256withECDSA ImplementedIn": "Software",
+					"Provider.id name": "SunEC",
+					"Signature.NONEwithECDSA SupportedKeyClasses": "java.security.interfaces.ECPublicKey|java.security.interfaces.ECPrivateKey",
+					"Signature.SHA224withECDSA ImplementedIn": "Software",
+					"Signature.SHA1withECDSA": "sun.security.ec.ECDSASignature$SHA1",
+					"Alg.Alias.Signature.OID.1.2.840.10045.4.1": "SHA1withECDSA",
+					"Signature.SHA256withECDSA SupportedKeyClasses": "java.security.interfaces.ECPublicKey|java.security.interfaces.ECPrivateKey",
+					"Signature.SHA224withECDSA SupportedKeyClasses": "java.security.interfaces.ECPublicKey|java.security.interfaces.ECPrivateKey",
+					"KeyPairGenerator.EC KeySize": "256",
+					"KeyFactory.EC ImplementedIn": "Software",
+					"Provider.id version": "1.8",
+					"AlgorithmParameters.EC KeySize": "256",
+					"Signature.NONEwithECDSA": "sun.security.ec.ECDSASignature$Raw",
+					"Signature.SHA512withECDSA ImplementedIn": "Software",
+					"Alg.Alias.KeyFactory.EllipticCurve": "EC",
+					"Alg.Alias.KeyPairGenerator.EllipticCurve": "EC",
+					"Signature.SHA256withECDSA": "sun.security.ec.ECDSASignature$SHA256",
+					"Signature.SHA512withECDSA": "sun.security.ec.ECDSASignature$SHA512",
+					"Signature.SHA1withECDSA KeySize": "256",
+					"Signature.SHA1withECDSA SupportedKeyClasses": "java.security.interfaces.ECPublicKey|java.security.interfaces.ECPrivateKey",
+					"Signature.SHA384withECDSA SupportedKeyClasses": "java.security.interfaces.ECPublicKey|java.security.interfaces.ECPrivateKey",
+					"Alg.Alias.AlgorithmParameters.EllipticCurve": "EC",
+					"Alg.Alias.AlgorithmParameters.1.2.840.10045.2.1": "EC",
+					"Alg.Alias.Signature.1.2.840.10045.4.1": "SHA1withECDSA",
+					"Signature.SHA224withECDSA": "sun.security.ec.ECDSASignature$SHA224",
+					"Signature.SHA384withECDSA ImplementedIn": "Software",
+					"AlgorithmParameters.EC ImplementedIn": "Software",
+					"Provider.id info": "Sun Elliptic Curve provider (EC, ECDSA, ECDH)",
+					"Signature.SHA512withECDSA SupportedKeyClasses": "java.security.interfaces.ECPublicKey|java.security.interfaces.ECPrivateKey",
+					"KeyPairGenerator.EC": "sun.security.ec.ECKeyPairGenerator",
+					"Alg.Alias.Signature.OID.1.2.840.10045.4.3.4": "SHA512withECDSA",
+					"Alg.Alias.Signature.OID.1.2.840.10045.4.3.3": "SHA384withECDSA",
+					"KeyAgreement.ECDH": "sun.security.ec.ECDHKeyAgreement",
+					"Alg.Alias.Signature.OID.1.2.840.10045.4.3.2": "SHA256withECDSA",
+					"Alg.Alias.Signature.1.2.840.10045.4.3.4": "SHA512withECDSA",
+					"Alg.Alias.Signature.OID.1.2.840.10045.4.3.1": "SHA224withECDSA",
+					"Signature.SHA384withECDSA": "sun.security.ec.ECDSASignature$SHA384",
+					"Alg.Alias.Signature.1.2.840.10045.4.3.3": "SHA384withECDSA",
+					"Alg.Alias.Signature.1.2.840.10045.4.3.2": "SHA256withECDSA",
+					"Alg.Alias.Signature.1.2.840.10045.4.3.1": "SHA224withECDSA",
+					"Signature.SHA1withECDSA ImplementedIn": "Software",
+					"Signature.NONEwithECDSA ImplementedIn": "Software",
+					"Provider.id className": "sun.security.ec.SunEC",
+					"AlgorithmParameters.EC SupportedCurves": "[secp112r1,1.3.132.0.6]|[secp112r2,1.3.132.0.7]|[secp128r1,1.3.132.0.28]|[secp128r2,1.3.132.0.29]|[secp160k1,1.3.132.0.9]|[secp160r1,1.3.132.0.8]|[secp160r2,1.3.132.0.30]|[secp192k1,1.3.132.0.31]|[secp192r1,NIST P-192,X9.62 prime192v1,1.2.840.10045.3.1.1]|[secp224k1,1.3.132.0.32]|[secp224r1,NIST P-224,1.3.132.0.33]|[secp256k1,1.3.132.0.10]|[secp256r1,NIST P-256,X9.62 prime256v1,1.2.840.10045.3.1.7]|[secp384r1,NIST P-384,1.3.132.0.34]|[secp521r1,NIST P-521,1.3.132.0.35]|[X9.62 prime192v2,1.2.840.10045.3.1.2]|[X9.62 prime192v3,1.2.840.10045.3.1.3]|[X9.62 prime239v1,1.2.840.10045.3.1.4]|[X9.62 prime239v2,1.2.840.10045.3.1.5]|[X9.62 prime239v3,1.2.840.10045.3.1.6]|[sect113r1,1.3.132.0.4]|[sect113r2,1.3.132.0.5]|[sect131r1,1.3.132.0.22]|[sect131r2,1.3.132.0.23]|[sect163k1,NIST K-163,1.3.132.0.1]|[sect163r1,1.3.132.0.2]|[sect163r2,NIST B-163,1.3.132.0.15]|[sect193r1,1.3.132.0.24]|[sect193r2,1.3.132.0.25]|[sect233k1,NIST K-233,1.3.132.0.26]|[sect233r1,NIST B-233,1.3.132.0.27]|[sect239k1,1.3.132.0.3]|[sect283k1,NIST K-283,1.3.132.0.16]|[sect283r1,NIST B-283,1.3.132.0.17]|[sect409k1,NIST K-409,1.3.132.0.36]|[sect409r1,NIST B-409,1.3.132.0.37]|[sect571k1,NIST K-571,1.3.132.0.38]|[sect571r1,NIST B-571,1.3.132.0.39]|[X9.62 c2tnb191v1,1.2.840.10045.3.0.5]|[X9.62 c2tnb191v2,1.2.840.10045.3.0.6]|[X9.62 c2tnb191v3,1.2.840.10045.3.0.7]|[X9.62 c2tnb239v1,1.2.840.10045.3.0.11]|[X9.62 c2tnb239v2,1.2.840.10045.3.0.12]|[X9.62 c2tnb239v3,1.2.840.10045.3.0.13]|[X9.62 c2tnb359v1,1.2.840.10045.3.0.18]|[X9.62 c2tnb431r1,1.2.840.10045.3.0.20]|[brainpoolP160r1,1.3.36.3.3.2.8.1.1.1]|[brainpoolP192r1,1.3.36.3.3.2.8.1.1.3]|[brainpoolP224r1,1.3.36.3.3.2.8.1.1.5]|[brainpoolP256r1,1.3.36.3.3.2.8.1.1.7]|[brainpoolP320r1,1.3.36.3.3.2.8.1.1.9]|[brainpoolP384r1,1.3.36.3.3.2.8.1.1.11]|[brainpoolP512r1,1.3.36.3.3.2.8.1.1.13]",
+					"KeyPairGenerator.EC ImplementedIn": "Software",
+					"KeyAgreement.ECDH ImplementedIn": "Software",
+					"KeyFactory.EC": "sun.security.ec.ECKeyFactory"
+				},
+				"algorithm": "EC",
+				"encoded": "BgUrgQQAIg=="
+			}
+		},
+		"encodedInternal": "MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEaL7VNiSRvdPOPmiN3Kkc8cBLRc2+N+mSfgq3PdK832N9wMwF+GwfgfnsE3XkcVCw6EBxU3C7/2BTvJz7N+cCyxk4FbGdzFFVpqgJUBJITP9AWz0v5lQ9fsWfpW8YJFlt"
+	}
+}
